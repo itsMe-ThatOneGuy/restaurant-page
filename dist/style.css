@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(img/crowd2.jpg);
+    background-size: cover;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color: #FA7921;
+    align-items: center;
+    border-bottom: 2px solid #04151f;
+}
+
+nav h2 {
+    font-size: 4rem;
+    color: #04151f;
+}
+
+ul {
+    display: flex;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    justify-content: space-around;
+    width: 30%;
+}
+
+li {
+    list-style: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-itm:hover {
+    color: #E9E3E6;
+}
+
+main {
+    max-width: 800px;
+    padding: 4rem;
+    margin: 6rem auto;
+    min-height: 73.3vh;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #8C271E;
+    font-size: 6.5rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.hero p {
+    color: #04151F;
+    font-size: 2.5rem;
+    margin-bottom: 10rem;
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20rem;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #E9E3E6;
+    font-size: 1.6rem;
+}
