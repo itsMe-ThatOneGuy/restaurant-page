@@ -1,20 +1,18 @@
 import loadPage from "./mainpage.js"
+import loadHome from "./home.js"
+
 
 loadPage();
+currentTab()
 
-function currentTab(tab) {
+function currentTab() {
     const tabs = document.querySelectorAll(".nav-itm");
 
     tabs.forEach((tab) => {
-        if (tab !== this) {
-            tab.classList.remove('current');
-        }
+        tab.addEventListener('click',  (e) => {
+            if (e.target.classList.contains("active")) return;
+            console.log(tab.classList);
+        });
     });
-
-    tab.classList.add('current');
-}
-/*function test () {
-    console.log('Hello World')
 }
 
-test(); */
