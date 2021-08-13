@@ -14,23 +14,14 @@ function createNav() {
     const homeTab = document.createElement('li');
     homeTab.classList.add('nav-itm');
     homeTab.textContent = "Home";
-    homeTab.addEventListener('click', (e) => {
-        console.log(e);
-    });
 
     const menuTab = document.createElement('li');
     menuTab.classList.add('nav-itm');
     menuTab.textContent = "menu";
-    menuTab.addEventListener('click', (e) => {
-        console.log(e);
-    });
 
     const contactTab = document.createElement('li');
     contactTab.classList.add('nav-itm');
     contactTab.textContent = "Contact";
-    contactTab.addEventListener('click', (e) => {
-        console.log(e);
-    });
 
     
     ul.appendChild(homeTab);
