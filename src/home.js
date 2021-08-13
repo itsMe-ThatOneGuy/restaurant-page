@@ -15,7 +15,7 @@ function createHero() {
     heroL.textContent = 'Pushed to our Knees so let us pray';
 
     const heroP = document.createElement('p');
-    heroP.textContent = 'The best straight edge vegan resturant in all of CA';
+    heroP.textContent = 'The best straight edge Punk vegan resturant in all of CA';
 
     hero.appendChild(heroL);
     hero.appendChild(heroP);
@@ -29,13 +29,14 @@ function createHeroImg() {
     const punkImg = document.createElement('img');
     punkImg.src = 'img/straight-edge.jpg';
     punkImg.alt = 'fist with X for the straight edge movement';
+    imgContainer.appendChild(punkImg);
 
     return imgContainer;
 }
 
 function loadHome() {
-    const main = document.getElementById('content');
-    main.textContent = ''
+    const main = document.getElementById('main');
+    main.textContent = '';
     main.appendChild(createHome());
 }
 
