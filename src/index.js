@@ -1,5 +1,7 @@
-import loadPage from "./mainpage.js"
-import loadHome from "./home.js"
+import loadPage from "./mainpage.js";
+import loadHome from "./home.js";
+import loadMenu from "./menu.js";
+import loadContact from "./contact.js";
 
 
 
@@ -16,9 +18,11 @@ tabs.forEach((tab) => {
 
 function currentTab(tab) {
     //console.log(tab.className);
-    if(tab.classList.contains('home')) {
+    if (tab.classList.contains('home')) {
         loadHome();
-    } else {
-        console.log(tab.className);
+    } else if(tab.classList.contains('menu')) {
+        loadMenu();
+    } else if(tab.classList.contains('contact')) {
+        loadContact();
     }
 }
