@@ -19,7 +19,7 @@ function createNav() {
 
     const menuTab = document.createElement('li');
     menuTab.classList.add('nav-itm', 'menu');
-    menuTab.textContent = "menu";
+    menuTab.textContent = "Menu";
 
     const contactTab = document.createElement('li');
     contactTab.classList.add('nav-itm', 'contact');
