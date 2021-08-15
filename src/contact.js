@@ -3,8 +3,8 @@ function createContact() {
     contact.classList.add('contact-container');
     
     contact.appendChild(contactHero());
-    contact.appendChild(address());
     contact.appendChild(businessHours());
+    contact.appendChild(address());
     contact.appendChild(mapIframe());
 
     return contact;
@@ -15,7 +15,7 @@ function contactHero() {
     hero.classList.add('hero');
 
     const heroL = document.createElement('h1');
-    heroL.textContent = "Contact Us"
+    heroL.textContent = "Contact Us";
 
     hero.appendChild(heroL);
 
@@ -24,7 +24,7 @@ function contactHero() {
 
 function address() {
     const addressCont = document.createElement('div');
-    addressCont.classList.add('address-container');
+    addressCont.classList.add('address-container', 'hero');
 
     const addressIcon = document.createElement('i');
     addressIcon.classList.add('fas', 'fa-map-marker-alt')
@@ -42,7 +42,7 @@ function address() {
 
 function businessHours() {
     const hoursContainer = document.createElement('div');
-    hoursContainer.classList.add('hours-container');
+    hoursContainer.classList.add('hours-container', 'hero');
 
     const hoursIcon = document.createElement('i');
     hoursIcon.classList.add('fas', 'fa-clock');
@@ -58,15 +58,12 @@ function businessHours() {
     return hoursContainer;
 }
 
-
-//<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6298.424561310563!2d-122.3032390051288!3d37.87871799322308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ec9cb6639f1%3A0x49ec1cc7e7dc57fc!2sAlternative%20Music%20Foundation!5e0!3m2!1sen!2sus!4v1628904224306!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 function mapIframe() {
     const iframeCont = document.createElement('div');
 
 
     const iFrame = document.createElement('iframe');
     iFrame.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6298.424561310563!2d-122.3032390051288!3d37.87871799322308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ec9cb6639f1%3A0x49ec1cc7e7dc57fc!2sAlternative%20Music%20Foundation!5e0!3m2!1sen!2sus!4v1628904224306!5m2!1sen!2sus";
-
     iframeCont.appendChild(iFrame);
 
     return iframeCont;
