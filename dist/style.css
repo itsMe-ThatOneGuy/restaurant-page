@@ -99,3 +99,16 @@ footer {
     color: #E9E3E6;
     font-size: 1.6rem;
 }
+
+i {
+    font-size: 3.5rem;
+    padding-bottom: 50px;
+    color: #E9190F;
+}
+
+iframe {
+    max-height: 200vh;
+    height: 400px;
+    max-width: 800px;
+    width: 500px;
+}
